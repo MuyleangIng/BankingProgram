@@ -14,7 +14,7 @@ public class BankProgram {
         if (creditCard.getNumber().equals(Database.creditCard().getNumber())){
             creditCard = Database.creditCard();
         }
-        creditCard.deposit(500.50);
+       // creditCard.deposit(500.50);
 
         creditCard.showBalance();
         SavingAccount savingAccount = new SavingAccount(123456789,"MuyleangIng",100.0);
