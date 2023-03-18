@@ -8,7 +8,7 @@ public class BankProgram {
     public static void main(String[] args) {
 
         CreditCard creditCard = new CreditCard();
-        creditCard.setNumber(888111222);
+        creditCard.setNumber(11223344);
         creditCard.setPin(123);
         creditCard.setThruDate(LocalDate.now());
         if (creditCard.getNumber().equals(Database.creditCard().getNumber())){

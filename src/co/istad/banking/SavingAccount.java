@@ -12,8 +12,7 @@ public class SavingAccount extends Account implements Interest{
     }
 
     public SavingAccount(){
-        // this.interestI = new DefaultInterest(new RielRate());
-        //setInterestI(new DefaultInterest());
+
         setInterestI(new Interest() {
             @Override
             public Double calculate(Double amount) {

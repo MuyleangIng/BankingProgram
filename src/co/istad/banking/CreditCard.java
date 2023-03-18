@@ -44,7 +44,7 @@ public class CreditCard extends Account {
     protected final void deposit(Double amount) {
 
         if (isExpired(thruDate)) {
-            super.formatMessage("Card is expired...!!!");
+            super.formatMessage("Card is expired.......!!!");
             return;
         }
         super.deposit(amount);
@@ -53,17 +53,17 @@ public class CreditCard extends Account {
     @Override
     protected final void withdraw(Double amount) {
         if (!pin.equals(Database.creditCard().getPin())) {
-            super.formatMessage("Incorrect pin...!!!");
+            super.formatMessage("Incorrect pin.......!!!");
             return;
         }
 
         if (isExpired(thruDate)) {
-            super.formatMessage("Card is expired...!!!");
+            super.formatMessage("Card is expired.......!!!");
             return;
         }
 
         if (amount > limitAmount) {
-            super.formatMessage("Over the limit amount...!!!");
+            super.formatMessage("Over the limit amount........!!!");
             return;
         }
 
